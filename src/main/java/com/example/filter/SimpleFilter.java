@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class SimleFilter extends ZuulFilter{
+public class SimpleFilter extends ZuulFilter{
 
-	private static Logger log=LoggerFactory.getLogger(SimleFilter.class);
+	private static Logger log=LoggerFactory.getLogger(SimpleFilter.class);
 	
 	public String filterType(){
 		return "pre";

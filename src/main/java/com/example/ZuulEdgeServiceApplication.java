@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
-import com.example.filter.SimleFilter;
+import com.example.filter.SimpleFilter;
 
 @EnableZuulProxy
 @SpringBootApplication
@@ -16,7 +16,7 @@ public class ZuulEdgeServiceApplication {
 	}
 	
 	@Bean
-	public SimleFilter simpleFilter(){
-		return new SimleFilter();
+	public SimpleFilter simpleFilter(){
+		return new SimpleFilter();
 	}
 }
